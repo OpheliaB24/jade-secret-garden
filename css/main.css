@@ -1,0 +1,532 @@
+/* * * BASE STYLES * * */
+
+/* * * HOME PAGE * * */
+body{
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/* * * * * GRID * * * * */
+
+.full-width{
+  margin: 0 auto;
+  overflow: auto;
+  width: 1200px;
+}
+
+.half-width{
+  float: left;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.third-width{
+  float: left;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* * * HEADER * * */
+
+header{
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+#title{
+  padding: 80px 0 10px 0;
+}
+
+h1{
+  color: #fc6161;
+  font-family: 'El Messiri', sans-serif;
+  font-size: 40px;
+  font-variant: small-caps;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  word-spacing: 5px;
+}
+
+.brand-name{
+  font-family: 'El Messiri', sans-serif;
+  font-size: 120px;
+  font-weight: lighter;
+  color: #723d46;
+  text-align: center;
+}
+
+
+/* * * NAVIGATION MENU * * */
+
+.top-navbar {
+  overflow: hidden;
+  float: none;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.top-navbar a {
+  float: none;
+  font-size: 16px;
+  font-weight: 100;
+  color: #723d46;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+}
+
+.top-navbar a:hover{
+  background-color: #ffffff;
+  color: #fc6161;
+}
+
+.bottom-navbar{
+  text-align: center;
+}
+
+.bottom-navbar ul{
+  list-style: none;
+  text-align: center;
+}
+
+.bottom-navbar ul li{
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 25px;
+  text-align:inherit;
+}
+
+.bottom-navbar ul li a{
+  text-align: center;
+  color: #723d46;
+}
+
+.bottom-navbar ul li a:hover{
+  color: #fc6161;
+  }
+
+/* * * ABOUT * * */
+
+#about .full-width {
+  margin: 0 auto;
+  padding: 100px 20px 0 20px;
+}
+
+.half-width{
+  text-align: center;
+}
+
+#about-img{
+  border: 2px solid #723d46;
+  margin-left: 10px;
+  border-radius: 50%;
+  max-width:60%;
+  height:auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#about h2{
+  color: #fc6161;
+  font-size: 35px;
+  font-variant: small-caps;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+#about p{
+  text-align: left;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.sustainability{
+  color: #fc6161;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 60px;
+  text-align: left;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+/* * * PORTFOLIO * * */
+
+#portfolio .full-width{
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+#portfolio h2{
+  color: #fc6161;
+  font-size: 35px;
+  font-variant: small-caps;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding-bottom: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#portfolio .third-width{
+  text-align: center;
+}
+
+#bday-img{
+  border: 2px solid #723d46;
+  height: 400px;
+}
+
+#wedding-img{
+  border: 2px solid #723d46;
+  height: 400px;
+}
+
+#cafe-img{
+  border: 2px solid #723d46;
+  height: 400px;
+}
+
+#portfolio h3{
+  text-align: center;
+  padding: 10px 10px 60px 10px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+#portfolio p{
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #723d46;
+  letter-spacing: 1px;
+}
+
+#portfolio a{
+  text-decoration: none;
+  color: #723d46;
+
+}
+
+#portfolio a:hover{
+  color: #fc6161;
+}
+
+hr{
+  border: 1px solid #fc6161;
+  border-radius: 2px;
+  width: 400px;
+}
+
+/* * * FOOTER * * */
+
+#contact .full-width{
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.embedsocial-hashtag{
+  text-align: center;
+  padding: 40px 0 40px 320px;
+}
+
+.icons{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.icons a{
+  text-align: center;
+  color: #723d46;
+}
+
+.icons a:hover{
+  color: #fc6161;
+  }
+
+.icons ul{
+  list-style: none;
+  text-align: center;
+  padding-top: 50px;
+  }
+
+.icons ul li{
+  display: inline-block;
+  padding-right: 50px;
+  font-size: 25px;
+  }
+
+.contact p{
+  font-size: 16px;
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.contact p a{
+  color: #000000;
+}
+
+.contact a:hover{
+  color: #fc6161;;
+}
+
+.copyright h6{
+  text-align: center;
+  font-size: 12px;
+  padding-top: 80px;
+  clear: both;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+
+
+/* * * PORTFOLIO PAGE * * */
+
+.navbar{
+  overflow: hidden;
+  float:none;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a{
+  float: none;
+  font-weight: 100;
+  color: #723d46;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover{
+background-color: #ffffff;
+color: #fc6161;
+}
+
+.navbar #icons{
+  padding-left: 60px;
+  display: inline-block;
+
+}
+
+/* * * PROJECTS * * */
+
+#portfolios{
+  padding: 100px 20px 0 20px;
+  margin-bottom: 100px;
+}
+
+h2{
+  color: #fc6161;
+  font-size: 35px;
+  font-variant: small-caps;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding-bottom: 80px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.projects{
+  margin: 0 auto;
+  overflow: auto;
+  padding-top: 80px;
+}
+
+.sub-title h3{
+  font-size: 30px;
+  color: #fc6161;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.projects p{
+  width: 40%;
+  padding-left: 30px;
+}
+
+.projects p span{
+  margin-top: 30px;
+}
+
+.image img{
+  border: 1px solid #723d46;
+  float: right;
+  height: 300px;
+  margin: 5px;
+  max-width: 40%;
+  overflow: hidden;
+}
+
+.description{
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: 100;
+  float: right;
+}
+
+#aa-wedding p{
+  padding-left: 28px;
+}
+
+#botannix p{
+  padding-left: 50px;
+}
+
+#barrette .image img{
+  float: left;
+  height: 350px;
+  max-width: 50%;
+}
+
+#barrette .image{
+  padding-left: 120px;
+  float: left;
+  padding-right: 200px;
+}
+
+#barrette p{
+  float: right;
+}
+
+#crowns .image{
+  padding-right: 100px;
+}
+
+#crowns .image img{
+  height: 300px;
+  max-width: 50%;
+}
+
+#crowns p{
+  padding-left: 130px;
+}
+
+#baby-bouquet .image img{
+  float: left;
+  height: 350px;
+  max-width: 50%;
+}
+
+#baby-bouquet .image{
+  padding-left: 120px;
+  float: left;
+  padding-right: 200px;
+}
+
+#baby-bouquet p{
+  float: right;
+}
+
+#garland .image{
+  padding-right: 60px;
+}
+
+#garland .image img{
+  height: 300px;
+  max-width: 50%;
+}
+
+#garland p{
+  padding-left: 130px;
+}
+
+#workshop .image img{
+  float: left;
+  margin: 8px;
+  text-align: center;
+}
+
+#workshop .image{
+  padding-left: 50px;
+  float: left;
+}
+
+#workshop p{
+  margin: 0 auto;
+  float: none;
+  display: inline;
+}
+
+#workshop p span{
+  text-align: center;
+  padding: 30px 50px 0 0;
+  margin: 0 auto;
+}
+
+#faqs .full-width{
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h4{
+  color: #fc6161;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+ul {
+  list-style-type: circle;
+  margin: 0;
+  overflow: hidden;
+  text-align: left;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.questions{
+  float: left;
+  font-style: italic;
+  color: #723d46;
+  font-weight: bolder;
+}
+
+.answers{
+  padding: 10 0 20px 0;
+}
+
+h5{
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #fc6161;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
