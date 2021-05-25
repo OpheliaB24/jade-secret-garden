@@ -21,14 +21,14 @@
 
   <!-- The navigation menu -->
 
-           <div class="top-navbar">
+            <div class="top-navbar">
               <a href="index.html">Home</a>
               <a href="#about">About</a>
               <a href="https://www.etsy.com/nz/shop/JadesSecretGarden?ref=seller-platform-mcnav" target="_blank">Shop</a>
               <a href="portfolio/index.html" target="_blank">Portfolio</a>
               <a href="portfolio/index.html">FAQS</a>
               <a href="#contact">Contact</a>
-
+            </div>
             <div class="bottom-navbar">
               <ul>
                 <li><a href="https://www.facebook.com/Jades-Secret-Garden-112358690447904" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -36,33 +36,36 @@
                 <li><a href="https://www.etsy.com/nz/shop/JadesSecretGarden" target="_blank"><i class="fab fa-etsy"></i></a></li>
               </ul>
             </div>
-            </div>
+
     </header>
 
     <main>
       <section id="about">
-        <div class="full-width">
-          <div class= "half-width">
+        <container class="full-width">
+          <div class= "half-width" style="order: 2">
             <img src="img/about-picture.png" id="about-img" alt="my contact image"/>
           </div>
 
-          <div class= "half-width">
+          <div class= "half-width" id="intro-title" style="order: 1">
             <h2>Behind the flowers</h2>
-              <p>Jade’s Secret Garden designs bespoke arrangements for every occasion.<br>
-                Hi, I'm Jade, I am a true flower enthusiast who started my business<br>during the lockdown last year.<br>
-                My love for creation and dried flowers has encouraged me to branch out (<em>pun intended!</em>) and share my passion with others through dried floral design.<br>
+          </div>
+          <div class= "half-width" id="intro-text" style="order: 3">
+              <p>Jade’s Secret Garden designs bespoke arrangements for every occasion.
+                Hi, I'm Jade, I am a true flower enthusiast who started my business during the lockdown last year.
+                My love for creation and dried flowers has encouraged me to branch out (<em>pun intended!</em>) and share my passion with others through dried floral design.
                 You can find me most days working from my home studio in Whanganui, occasionaly at the market or hosting workshops.<br>
                 <span class="sustainability">Sustainability</span><br>
-                Sustainability is a genuine aspect of my business that I take<br>real pride on.<br>
+                Sustainability is a genuine aspect of my business that I take real pride on.
                 I only use locally grown foliage and flowers, and my packaging is plastic free and fully recyclable.</p>
           </div>
-        </div>
+        </container>
       </section>
 
       <section id="portfolio">
-          <div class="full-width">
-            <h2>Steal a glance at my projects</h2>
-
+          <container class="full-width">
+            <div class= "half-width" id="projects-title">
+              <h2>Steal a glance at my projects</h2>
+            </div>
               <div class="third-width">
                 <img src="img/small-bouquet-1st-bday.png" id="bday-img" alt="my portfolio image"/>
                 <h3>Small bouquet in pink tones for this beautiful little girl's 1st birthday</h3>
@@ -70,26 +73,26 @@
 
               <div class="third-width">
                 <img src="img/aa-wedding5.png" id="wedding-img" alt="my portfolio image"/>
-                <h3>Bohemian style floral bride's barrette<br>and groom's buttonhole</h3>
+                <h3>Bohemian style floral bride's barrette and groom's buttonhole</h3>
               </div>
 
               <div class="third-width">
                 <img src="img/botannix-cafe1.png" id="cafe-img" alt="my portfolio image"/>
-                <h3>Large floral clouds with a tropical rustic vibe<br>requested for a cafe in Auckland</h3>
+                <h3>Large floral clouds with a tropical rustic vibe requested for a cafe in Auckland</h3>
               </div>
 
               <p><a href="portfolio/index.html" target="_blank">Click here to see more of my completed and on-going creations!</a></p>
-           </div>
+           </container>
       </section>
 
       <hr>
 
       <footer id="contact">
-        <div class="full-width">
-
-          <div class="embedsocial-hashtag" data-ref="1e20c29706797234760ece53923cb06c6706f1d2" >
+        <container class="full-width">
+          <div class="instagram-widgets">
+              <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+              <div class="elfsight-app-343774d7-f663-4476-9f3f-50f3b9ef4245"></div>
           </div>
-          <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
 
           <div class="icons">
               <ul>
@@ -106,7 +109,7 @@
           <div class="copyright">
             <h6>Copyright © 2021 Jade's Secret Garden. All rights reserved.</h6>
           </div>
-        </div>
+        </container>
       </footer>
     </main>
   </body>

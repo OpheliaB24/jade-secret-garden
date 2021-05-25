@@ -1,88 +1,111 @@
 /* * * BASE STYLES * * */
 
 /* * * HOME PAGE * * */
+html{
+	font-size: 16px;
+}
+
 body{
   background-color: #ffffff;
   color: #000000;
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 1em;
+  line-height: 1em;
+  display: flex;
+	justify-content: center;
+  flex-flow: row wrap;
+	align-items: center;
+	margin: 0 auto;
 }
 
 /* * * * * GRID * * * * */
 
 .full-width{
-  margin: 0 auto;
   overflow: auto;
   width: 1200px;
 }
 
 .half-width{
-  float: left;
-  margin: 0 auto;
   width: 600px;
 }
 
 .third-width{
-  float: left;
-  margin: 0 auto;
   width: 400px;
 }
 
 /* * * HEADER * * */
 
 header{
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-}
-
-#title{
-  padding: 80px 0 10px 0;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+  text-align: center;
+  margin: 0;
+	padding: 0;
+  padding-top: 2em;
 }
 
 h1{
   color: #fc6161;
   font-family: 'El Messiri', sans-serif;
-  font-size: 40px;
+  font-size: 3em;
   font-variant: small-caps;
   font-weight: 100;
-  letter-spacing: 1px;
-  line-height: 60px;
-  padding-bottom: 20px;
+  letter-spacing: 0.030em;
+  line-height: 0.875;
   text-align: center;
   text-transform: capitalize;
-  word-spacing: 5px;
+  word-spacing: 0.313em;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+
 }
 
 .brand-name{
   font-family: 'El Messiri', sans-serif;
-  font-size: 120px;
+  font-size: 3.5em;
   font-weight: lighter;
   color: #723d46;
   text-align: center;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
 }
 
 
 /* * * NAVIGATION MENU * * */
 
+
 .top-navbar {
   overflow: hidden;
-  float: none;
-  padding: 20px 0;
+  padding: 2em 0;
   text-align: center;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  width: 70%;
+  text-align: center;
+  flex-flow: : row wrap;
 }
 
 .top-navbar a {
-  float: none;
-  font-size: 16px;
+  font-size: 1.125em;
   font-weight: 100;
   color: #723d46;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  display: inline-block;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  width: 100%;
+  text-align: center;
 }
 
 .top-navbar a:hover{
@@ -92,22 +115,25 @@ h1{
 
 .bottom-navbar{
   text-align: center;
+  width: 100%;
+	padding-bottom: 3em;
 }
 
 .bottom-navbar ul{
   list-style: none;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .bottom-navbar ul li{
-  display: inline-block;
-  padding-right: 10px;
-  font-size: 25px;
-  text-align:inherit;
+	padding-right: 2em;
+  font-size: 1.5em;
 }
 
 .bottom-navbar ul li a{
-  text-align: center;
   color: #723d46;
 }
 
@@ -117,49 +143,62 @@ h1{
 
 /* * * ABOUT * * */
 
-#about .full-width {
-  margin: 0 auto;
-  padding: 100px 20px 0 20px;
+main{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-flow: row wrap;
 }
 
-.half-width{
+section{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-flow: row wrap;
+}
+
+#about .full-width {
+  margin: 0 auto;
+  padding: 1.25em;
   text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
 }
 
 #about-img{
   border: 2px solid #723d46;
-  margin-left: 10px;
   border-radius: 50%;
-  max-width:60%;
-  height:auto;
-  margin-top: 100px;
+  width:60%;
   text-align: center;
 }
 
 #about h2{
   color: #fc6161;
-  font-size: 35px;
+  font-size: 2.188em;
   font-variant: small-caps;
   font-weight: 100;
-  letter-spacing: 2px;
-  padding-bottom: 20px;
-  text-align: left;
+  letter-spacing: 0.100em;
+  padding-bottom: 1em;
+  text-align: center;
   text-transform: capitalize;
 }
 
 #about p{
-  text-align: left;
-  padding-bottom: 20px;
-  letter-spacing: 1px;
-  line-height: 25px;
+  text-align: center;
+  padding: 1em 2.5em;
+  letter-spacing: 0.063em;
+  line-height: 1.563em;
+	max-width: 100%;
 }
 
 .sustainability{
   color: #fc6161;
-  font-size: 25px;
+  font-size: 1.563em;
   font-weight: 100;
-  line-height: 60px;
-  text-align: left;
+  line-height: 3em;
+  text-align: center;
   text-transform: capitalize;
   font-variant: small-caps;
 }
@@ -168,16 +207,22 @@ h1{
 
 #portfolio .full-width{
   margin: 0 auto;
-  padding: 60px 10px;
+	padding: 1.25em;
+  text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	max-width: 100%;
 }
 
 #portfolio h2{
   color: #fc6161;
-  font-size: 35px;
+  font-size: 2.188em;
   font-variant: small-caps;
   font-weight: 100;
-  letter-spacing: 2px;
-  padding-bottom: 40px;
+  letter-spacing: 0.100em;
+  padding-bottom: 1em;
   text-align: center;
   text-transform: capitalize;
 }
@@ -188,31 +233,31 @@ h1{
 
 #bday-img{
   border: 2px solid #723d46;
-  height: 400px;
+	max-width: 100%;
 }
 
 #wedding-img{
   border: 2px solid #723d46;
-  height: 400px;
+	max-width: 100%;
 }
 
 #cafe-img{
   border: 2px solid #723d46;
-  height: 400px;
+	max-width: 100%;
 }
 
 #portfolio h3{
   text-align: center;
-  padding: 10px 10px 60px 10px;
-  font-size: 16px;
+  padding: 1em 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   letter-spacing: 1px;
   line-height: 25px;
+	max-width: 100%;
 }
 
 #portfolio p{
-  font-size: 20px;
+  font-size: 1.125em;
   text-align: center;
   padding-bottom: 10px;
   color: #723d46;
@@ -222,7 +267,6 @@ h1{
 #portfolio a{
   text-decoration: none;
   color: #723d46;
-
 }
 
 #portfolio a:hover{
@@ -230,21 +274,32 @@ h1{
 }
 
 hr{
-  border: 1px solid #fc6161;
-  border-radius: 2px;
+  border: 0.031em solid #fc6161;
+  border-radius: 0.125em;
   width: 400px;
 }
 
 /* * * FOOTER * * */
 
-#contact .full-width{
-  margin: 0 auto;
-  padding: 20px;
+footer{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1.25em;
+	max-width: 100%;
 }
 
-.embedsocial-hashtag{
+#contact .full-width{
+  margin: 0 auto;
+}
+
+.instagram-widgets{
   text-align: center;
-  padding: 40px 0 40px 320px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
 }
 
 .icons{
@@ -269,8 +324,8 @@ hr{
 
 .icons ul li{
   display: inline-block;
-  padding-right: 50px;
-  font-size: 25px;
+	padding-right: 3em;
+  font-size: 1.5em;
   }
 
 .contact p{
@@ -293,7 +348,6 @@ hr{
   text-align: center;
   font-size: 12px;
   padding-top: 80px;
-  clear: both;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
 }
@@ -302,78 +356,56 @@ hr{
 
 /* * * PORTFOLIO PAGE * * */
 
-.navbar{
-  overflow: hidden;
-  float:none;
-  padding: 20px 0;
-  text-align: center;
-  text-decoration: none;
-}
 
-.navbar a{
-  float: none;
-  font-weight: 100;
-  color: #723d46;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.navbar a:hover{
-background-color: #ffffff;
-color: #fc6161;
-}
-
-.navbar #icons{
-  padding-left: 60px;
-  display: inline-block;
-
-}
 
 /* * * PROJECTS * * */
 
 #portfolios{
-  padding: 100px 20px 0 20px;
-  margin-bottom: 100px;
+  padding: 1.25em;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
 }
 
 h2{
   color: #fc6161;
-  font-size: 35px;
+  font-size: 2.188em;
   font-variant: small-caps;
   font-weight: 100;
-  letter-spacing: 2px;
-  padding-bottom: 80px;
+  letter-spacing: 0.100em;
+  padding-bottom: 1em;
   text-align: center;
   text-transform: capitalize;
 }
 
 .projects{
-  margin: 0 auto;
+
   overflow: auto;
-  padding-top: 80px;
+  padding-top: 2.5em;
+	max-width: 100%;
 }
 
 .sub-title h3{
-  font-size: 30px;
+  font-size: 1.875em;
   color: #fc6161;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-variant: small-caps;
   text-transform: capitalize;
-  margin: 0 auto;
-  padding-bottom: 60px;
+  padding-bottom: 2.5em;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 100%;
 }
 
 .projects p{
-  width: 40%;
-  padding-left: 30px;
+
+  padding-left: 0px;
 }
 
 .projects p span{
@@ -382,11 +414,11 @@ h2{
 
 .image img{
   border: 1px solid #723d46;
-  float: right;
-  height: 300px;
-  margin: 5px;
-  max-width: 40%;
+  margin: 2px;
+  max-width: 20%;
   overflow: hidden;
+
+
 }
 
 .description{
@@ -394,7 +426,6 @@ h2{
   letter-spacing: 1px;
   line-height: 30px;
   font-weight: 100;
-  float: right;
 }
 
 #aa-wedding p{
@@ -406,19 +437,15 @@ h2{
 }
 
 #barrette .image img{
-  float: left;
-  height: 350px;
   max-width: 50%;
 }
 
 #barrette .image{
   padding-left: 120px;
-  float: left;
   padding-right: 200px;
 }
 
 #barrette p{
-  float: right;
 }
 
 #crowns .image{
@@ -426,7 +453,6 @@ h2{
 }
 
 #crowns .image img{
-  height: 300px;
   max-width: 50%;
 }
 
@@ -435,19 +461,15 @@ h2{
 }
 
 #baby-bouquet .image img{
-  float: left;
-  height: 350px;
   max-width: 50%;
 }
 
 #baby-bouquet .image{
   padding-left: 120px;
-  float: left;
   padding-right: 200px;
 }
 
 #baby-bouquet p{
-  float: right;
 }
 
 #garland .image{
@@ -455,7 +477,6 @@ h2{
 }
 
 #garland .image img{
-  height: 300px;
   max-width: 50%;
 }
 
@@ -464,19 +485,16 @@ h2{
 }
 
 #workshop .image img{
-  float: left;
   margin: 8px;
   text-align: center;
 }
 
 #workshop .image{
   padding-left: 50px;
-  float: left;
 }
 
 #workshop p{
   margin: 0 auto;
-  float: none;
   display: inline;
 }
 
@@ -512,7 +530,6 @@ ul {
 }
 
 .questions{
-  float: left;
   font-style: italic;
   color: #723d46;
   font-weight: bolder;
